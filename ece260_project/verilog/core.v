@@ -9,7 +9,7 @@ parameter pr = 16;
 
 output [bw_psum+3:0] sum_out;
 output [bw_psum*col-1:0] out;
-wire   [bw_psum*col-1:0] pmem_out;
+//wire   [bw_psum*col-1:0] pmem_out;
 input  [pr*bw-1:0] mem_in;
 input  clk;
 input  [16:0] inst; 
@@ -89,7 +89,7 @@ sram_w16 #(.sram_bit(pr*bw)) kmem_instance (
 sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
         .CLK(clk),
         .D(pmem_in),
-        .Q(pmem_out),
+        .Q(out),
         .CEN(!(pmem_rd||pmem_wr)),
         .WEN(!pmem_wr), 
         .A(pmem_add)
