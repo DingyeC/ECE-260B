@@ -1,0 +1,59 @@
+[03/11 04:51:13      0] 
+[03/11 04:51:13      0] Cadence Innovus(TM) Implementation System.
+[03/11 04:51:13      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/11 04:51:13      0] 
+[03/11 04:51:13      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/11 04:51:13      0] Options:	
+[03/11 04:51:13      0] Date:		Mon Mar 11 04:51:13 2024
+[03/11 04:51:13      0] Host:		ieng6-ece-09.ucsd.edu (x86_64 w/Linux 3.10.0-1160.105.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/11 04:51:13      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/11 04:51:13      0] 
+[03/11 04:51:13      0] License:
+[03/11 04:51:13      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/11 04:51:13      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/11 04:51:14      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/11 04:51:14      0] 
+[03/11 04:51:14      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/11 04:51:14      0] 
+[03/11 04:51:14      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/11 04:51:14      0] 
+[03/11 04:51:22      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/11 04:51:22      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/11 04:51:22      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/11 04:51:22      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/11 04:51:22      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/11 04:51:22      7] @(#)CDS: CPE v15.23-s045
+[03/11 04:51:22      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/11 04:51:22      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/11 04:51:22      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/11 04:51:22      7] @(#)CDS: RCDB 11.7
+[03/11 04:51:22      7] --- Running on ieng6-ece-09.ucsd.edu (x86_64 w/Linux 3.10.0-1160.105.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/11 04:51:22      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_28074_ieng6-ece-09.ucsd.edu_d1chen_Whk7gn.
+
+[03/11 04:51:22      7] 
+[03/11 04:51:22      7] **INFO:  MMMC transition support version v31-84 
+[03/11 04:51:22      7] 
+[03/11 04:51:22      7] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/11 04:51:22      7] <CMD> suppressMessage ENCEXT-2799
+[03/11 04:51:22      8] <CMD> getDrawView
+[03/11 04:51:22      8] <CMD> loadWorkspace -name Physical
+[03/11 04:51:23      8] <CMD> win
+[03/11 04:51:28      9] <CMD> set init_pwr_net VDD
+[03/11 04:51:28      9] <CMD> set init_gnd_net VSS
+[03/11 04:51:28      9] <CMD> set init_verilog ./netlist/fullchip.out.v
+[03/11 04:51:28      9] <CMD> set init_design_netlisttype Verilog
+[03/11 04:51:28      9] <CMD> set init_design_settop 1
+[03/11 04:51:28      9] <CMD> set init_top_cell fullchip
+[03/11 04:51:28      9] <CMD> set init_lef_file /home/linux/ieng6/ee260bwi23/public/PDKdata/lef/tcbn65gplus_8lmT2.lef
+[03/11 04:51:28      9] <CMD> create_library_set -name WC_LIB -timing $worst_timing_lib
+[03/11 04:51:28      9] **ERROR: (TCLCMD-995):	Can not open file '/home/linux/ieng6/ee260bwi23/public/PDKdata/lib/tcbn65gpluswc.lib' for library set
+[03/11 04:51:28      9] 
+[03/11 04:51:54     14] 
+[03/11 04:51:54     14] *** Memory Usage v#1 (Current mem = 424.805M, initial mem = 152.258M) ***
+[03/11 04:51:54     14] 
+[03/11 04:51:54     14] *** Summary of all messages that are not suppressed in this session:
+[03/11 04:51:54     14] Severity  ID               Count  Summary                                  
+[03/11 04:51:54     14] ERROR     IMPOAX-142           3  %s                                       
+[03/11 04:51:54     14] *** Message Summary: 0 warning(s), 3 error(s)
+[03/11 04:51:54     14] 
+[03/11 04:51:54     14] --- Ending "Innovus" (totcpu=0:00:14.6, real=0:00:41.0, mem=424.8M) ---
