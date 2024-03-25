@@ -1,0 +1,15 @@
+./fullchip_tb.v
+./fullchip.v
+./core.v
+./sync.v
+./sfp_row.v
+./mac_col.v
+./mac_16in.v
+./mac_array.v
+./sram_w16.v
+./ofifo.v
+./fifo_depth16.v
+./fifo_mux_16_1.v
+./fifo_mux_8_1.v
+./fifo_mux_2_1.v
+
